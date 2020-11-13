@@ -1,0 +1,46 @@
+body {
+  background-color: #8cf734;
+  padding: 10px;
+} 
+.card {
+  width: 300px;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+}
+.card > .inner{
+  background: #8cf734 ;
+}
+.card .social{
+  padding: 10px;
+  text-align: center;
+}
+.card .social a:hover{
+  position: relative;
+  top:-10px;
+}
+.card .social img{
+  width: 10px;
+  margin: 10px;
+  display: inline;
+}
+.card > .inner >.person::before{
+  content:' ';
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  position-top: -10px;
+  position-left: 10px;
+}
+.card > .inner > .person {
+  background-color: black;
+  left: -40px;
+  width: calc(200px + 90px);
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding: 2em;
+  position: relative;
+}
